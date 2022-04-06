@@ -24,7 +24,7 @@ body {
     text-align: center;
     font-family: Times, serif;
     text-shadow: 2px 2px 0px black;
-    font-size: 40px;
+    text-decoration: none;
 
     background-color: black;
     background-image: url("https://dva128.s3.eu-north-1.amazonaws.com/exam-questions/images/header.jpg");
@@ -35,9 +35,18 @@ body {
     margin: 0;
     
     border-bottom: 1px solid black;
+    display: block;
 }
 
-#header > *:last-child {
+#header:hover {
+    text-shadow: 0px 0px 10px white;
+}
+
+#header > div:first-child {
+    font-size: 40px;
+}
+
+#header > div:last-child {
     font-size: 15px;
 }
 
