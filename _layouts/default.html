@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="sv">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Tentamensportal - {{ page.title }}</title>
+        <style>
+{% include style.css %}
+{% include syntax.css %}
+        </style>
+    </head>
+    <body>
+        <div id="container">
+            <div id="header">
+                <div>TENTAMEN</div>
+                <div>PROGRAMMERINGSTEKNIK MED PYTHON</div>
+            </div>
+            {{ content }}
+            <pre id="terminal"></pre>
+        </div>
+    </body>
+    <script>
+{% include script.js %}
+    </script>
+</html>

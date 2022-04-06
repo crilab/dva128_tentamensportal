@@ -1,0 +1,56 @@
+.highlight {
+    margin: 20px 0;
+    padding: 10px;
+    border: 1px solid #888888;
+    font-size: 14px;
+}
+
+.highlight pre {
+    margin: 0;
+}
+
+.lineno {
+    background-color: #F0F0F0;
+    padding-right: 10px;
+}
+
+/* Keyword */
+.highlight .k {
+    color: #008000;
+    font-weight: bold;
+}
+
+/* Operator */
+.highlight .o {
+    color: #666666
+}
+
+/* Comment.Single */
+.highlight .c1 {
+    color: #408080;
+}
+
+/* Operator.Word */
+.highlight .ow {
+    color: #AA22FF;
+    font-weight: bold;
+}
+/* Literal.String */
+.highlight .s {
+    color: #BA2121;
+}
+
+/* Name.Builtin */
+.highlight .nb {
+    color: #008000;
+}
+
+/* Literal.Number.Float */
+.highlight .mf {
+    color: #666666;
+}
+
+/* Literal.Number.Integer */
+.highlight .mi {
+    color: #666666;
+}

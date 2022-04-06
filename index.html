@@ -1,0 +1,24 @@
+---
+layout: default
+title: Startsida
+categories:
+  - upprepningar
+  - filhantering
+  - listor
+  - dictionaries
+  - funktioner
+---
+{% for category in page.categories %}
+<div class="assignment-list">
+  <div class="assignment-list-header">{{ category | capitalize }}</div>
+  {% for uppgift in site.uppgifter %}
+  {% capture path %}_uppgifter/{{ category }}{% endcapture %}
+  {% if uppgift.path contains path %}
+    <div class="assignment-list-item assignment-list-item-{{ uppgift.color }}">
+      <a href="{{ uppgift.url }}">{{ uppgift.title }}</a>
+      <span></span>
+    </div>
+  {% endif %}
+  {% endfor %}
+</div>
+{% endfor %}

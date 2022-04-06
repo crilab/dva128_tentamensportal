@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro&family=VT323&display=swap');
+
+body {
+    font-family: 'Crimson Pro', serif;
+    font-size: 18px;
+    background-image: url("https://dva128.s3.eu-north-1.amazonaws.com/exam-questions/images/bg.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#container {
+    max-width: 800px;
+    margin: 0 auto;
+    border: 1px solid black;
+    background-color: white;
+}
+
+#container > * {
+    margin: 15px;
+}
+
+#header {
+    color: white;
+    text-align: center;
+    font-family: Times, serif;
+    text-shadow: 2px 2px 0px black;
+    font-size: 40px;
+
+    background-color: black;
+    background-image: url("https://dva128.s3.eu-north-1.amazonaws.com/exam-questions/images/header.jpg");
+    background-size: cover;
+    background-position: center;
+
+    padding: 25px;
+    margin: 0;
+    
+    border-bottom: 1px solid black;
+}
+
+#header > *:last-child {
+    font-size: 15px;
+}
+
+#subheader {
+    font-size: 20px;
+    text-align: center;
+    text-transform: uppercase;
+
+    background: linear-gradient(#eeeeee, #cccccc);
+
+    padding: 15px;
+    
+    border: 1px solid #888888;
+}
+
+.assignment-list {
+    border: 1px solid #888888;
+    border-radius: 10px;
+    
+    overflow: hidden;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.assignment-list-header {
+    text-align: center;
+
+    background: linear-gradient(#eeeeee, #cccccc);
+
+    padding: 10px;
+}
+
+.assignment-list-item {
+    border-top: 1px solid #888888;
+
+    display: flex;
+}
+
+.assignment-list-item:hover {
+    background-color: #FAFAFA;
+}
+
+.assignment-list-item a {
+    color: black;
+    text-decoration: none;
+
+    flex: 1;
+    padding: 10px;
+}
+
+.assignment-list-item a:hover {
+    color: #AABBFF;
+}
+
+.assignment-list-item span {
+    width: 75px;
+    border-left: 1px solid #888888;
+}
+
+.assignment-list-item-green {
+    order: 1;
+}
+
+.assignment-list-item-green span {
+    background-color: #ccffcc;
+}
+
+.assignment-list-item-red {
+    order: 2;
+}
+
+.assignment-list-item-red span {
+    background-color: #ffcccc;
+}
+
+#terminal {
+    padding: 10px;
+    border: 1px solid black;
+    height: 300px;
+    overflow: auto;
+    display: none;
+}
+
+#terminal input {
+    border: none;
+    outline: none;
+    margin: 0;
+    padding: 0;
+}
+
+#terminal, #terminal input {
+    color: lightgreen;
+    text-shadow: 1px 1px 0px black;
+    font-family: VT323, monospace;
+    font-size: 20px;
+    font-weight: bold;
+
+    background-color: rgb(51, 51, 51);
+}
