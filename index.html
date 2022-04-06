@@ -15,7 +15,7 @@ categories:
   {% capture path %}_uppgifter/{{ category }}{% endcapture %}
   {% if uppgift.path contains path %}
     <div class="assignment-list-item assignment-list-item-{{ uppgift.color }}">
-      <a href="{{ uppgift.url }}">{{ uppgift.title }}</a>
+      <a href=".{{ uppgift.url }}">{{ uppgift.title }}</a>
       <span></span>
     </div>
   {% endif %}
