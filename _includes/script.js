@@ -41,6 +41,9 @@ function input(prompt='') {
                 print(input.value)
                 resolve(input.value)
             }
+            else {
+                input.size = input.value.length + 2
+            }
         }
 
         terminal.onclick = () => {
