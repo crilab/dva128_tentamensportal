@@ -8,23 +8,6 @@ body {
     background-attachment: fixed;
 }
 
-table {
-    border-collapse: collapse;
-}
-
-table, td, th {
-    border: 1px solid #888888;
-}
-
-td, th {
-    padding: 5px;
-}
-
-th {
-    text-align: left;
-    background-color: #d5ecff;
-}
-
 #container {
     max-width: 800px;
     margin: 0 auto;
@@ -38,6 +21,17 @@ th {
 
 #container > table {
     margin: 15px auto;
+    border-collapse: collapse;
+}
+
+#container > table * {
+    border: 1px solid #888888;
+    padding: 5px;
+}
+
+#container > table th {
+    text-align: left;
+    background-color: #ddeeff;
 }
 
 #header {
