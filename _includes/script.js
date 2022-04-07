@@ -48,6 +48,7 @@ function input(prompt='') {
         }
 
         terminal.appendChild(input)
+        terminal.click()
     })
 }
 
