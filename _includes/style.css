@@ -13,7 +13,7 @@ table {
 }
 
 table, td, th {
-    border: 1px solid black;
+    border: 1px solid #888888;
 }
 
 td, th {
@@ -22,7 +22,7 @@ td, th {
 
 th {
     text-align: left;
-    background-color: #eeeeee;
+    background-color: #d5ecff;
 }
 
 #container {
@@ -34,6 +34,10 @@ th {
 
 #container > * {
     margin: 15px;
+}
+
+#container > table {
+    margin: 15px auto;
 }
 
 #header {
