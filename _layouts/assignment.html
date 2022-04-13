@@ -1,6 +1,15 @@
 ---
 layout: default
 ---
-<div id="subheader">{{ page.title }}</div>
-{{ content }}
+<div id="question">
+    <div id="subheader">{{ page.title }}</div>
+    {{ content }}
+    <pre id="terminal"></pre>
+    <div id="terminal_rerun">
+        <input id="terminal_rerun_input" type="button" value="&#9654;" disabled>
+    </div>
+</div>
 <script src="script.js"></script>
+<script>
+{% include script.js %}
+</script>
