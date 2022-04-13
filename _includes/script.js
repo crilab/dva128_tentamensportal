@@ -1,4 +1,6 @@
 const terminal = document.getElementById('terminal')
+const terminal_rerun = document.getElementById('terminal_rerun')
+const terminal_rerun_input = document.getElementById('terminal_rerun_input')
 
 function float(x) {
     const re = /^\d+\.?\d*$/
@@ -55,22 +57,42 @@ function input(prompt='') {
     })
 }
 
+function clear() {
+    terminal.innerText = ''
+}
+
 function sleep(secs) {
     return new Promise(resolve => {
         setTimeout(resolve, secs * 1000)
     })
 }
 
+async function wait_for_rerun() {
+    return new Promise(resolve => {
+        terminal_rerun_input.disabled = false
+        terminal_rerun_input.onclick = () => {
+            terminal_rerun_input.disabled = true
+            resolve()
+        }
+    })
+}
+
 async function init() {
     if (typeof main == 'function') {
         terminal.style.display = 'block'
-        try {
-            await main()
-        } catch (e) {
-            let error = document.createElement('div')
-            error.style.color = 'red'
-            error.innerText = e
-            terminal.appendChild(error)
+        terminal_rerun.style.display = 'block'
+
+        while (true) {
+            clear()
+            try {
+                await main()
+            } catch (e) {
+                let error = document.createElement('div')
+                error.style.color = 'red'
+                error.innerText = e
+                terminal.appendChild(error)
+            }
+            await wait_for_rerun()
         }
     }
 }
