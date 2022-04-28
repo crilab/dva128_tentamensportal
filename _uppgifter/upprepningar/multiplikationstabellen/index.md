@@ -5,7 +5,7 @@ color: red
 ---
 I följande exempel används nästlade while-loopar för att skriva ut en multiplikationstabell:
 
-{% highlight python %}
+{% highlight python linenos %}
 y = 1
 while y <= 10:
     x = 1
