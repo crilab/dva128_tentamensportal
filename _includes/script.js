@@ -3,7 +3,7 @@ const terminal_rerun = document.getElementById('terminal_rerun')
 const terminal_rerun_input = document.getElementById('terminal_rerun_input')
 
 function float(x) {
-    const re = /^\d+\.?\d*$/
+    const re = /^-?\d+\.?\d*$/
 
     if (!re.test(x))
         throw 'ValueError: could not convert string to float: \'' + x + '\''
@@ -12,7 +12,7 @@ function float(x) {
 }
 
 function int(x) {
-    const re = /^\d+$/
+    const re = /^-?\d+$/
 
     if (!re.test(x))
         throw 'ValueError: invalid literal for int() with base 10: \'' + x + '\'';
