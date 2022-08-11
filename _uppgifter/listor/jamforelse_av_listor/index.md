@@ -12,4 +12,6 @@ list_b = [4, 1, 1, 4, 7, 9, 6, 8, 5, 8]
 # DIN LÖSNING NEDAN
 {% endhighlight %}
 
-Programmet ska (genom iteration av listorna) skriva ut samtliga element från båda listor sida vid sida i vertikal riktning. Du kan utgå från att listorna alltid har samma längd. Positioner där listorna skiljer sig ska markeras med en pil likt exemplet nedan:
+Programmet ska skriva ut samtliga heltal från båda listor sida vid sida i vertikal riktning. Positioner där listorna skiljer sig ska markeras med en pil (likt exemplet nedan).
+
+Din lösning ska tolerera att listorna ändras i framtiden, men du kan alltid utgå från att **list_a** har samma längd som **list_b**.
