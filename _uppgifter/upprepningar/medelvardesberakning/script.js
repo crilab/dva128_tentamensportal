@@ -1,6 +1,6 @@
 async function main() {
-    print('MEDELVÄRDESBERÄKNING')
-    print('--------------------')
+    print('MEAN VALUE CALCULATOR')
+    print('---------------------')
 
     let i = ''
     let sum = count = 0
@@ -16,14 +16,14 @@ async function main() {
             sum += i
             count += 1
         } catch(e) {
-            print('FEL: ogiltigt heltal')
+            print('ERROR: invalid integer')
         }
     }
 
-    print('--------------------')
+    print('---------------------')
     if (count == 0) {
-        print('FEL: inga heltal')
+        print('ERROR: no integers')
     } else {
-        print(`RESULTAT: ${sum / count}`)
+        print(`RESULT: ${sum / count}`)
     }
 }
