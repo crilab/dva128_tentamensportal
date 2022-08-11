@@ -1,6 +1,6 @@
 async function main() {
-    print('SUMMERARE')
-    print('---------')
+    print('SUMMER')
+    print('------')
 
     let i = -1
     let sum = 0
@@ -10,10 +10,10 @@ async function main() {
             i = int(await input('> '))
             sum += i
         } catch(e) {
-            print('FEL: ogiltigt heltal')
+            print('ERROR: invalid integer')
         }
     }
 
-    print('---------')
-    print(`SUMMA: ${sum}`)
+    print('------')
+    print(`RESULT: ${sum}`)
 }
