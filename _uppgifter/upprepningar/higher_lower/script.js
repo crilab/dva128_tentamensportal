@@ -11,12 +11,12 @@ async function main() {
         guesses += 1
 
         if (guess < correct)
-            print('Högre!')
+            print('Higher!')
         else if (correct < guess)
-            print('Lägre!')
+            print('Lower!')
     }
 
     print('------------')
-    print(`${guess} är korrekt!`)
-    print(`Det tog dig ${guesses} gissningar.`)
+    print(`${guess} is correct!`)
+    print(`It took you ${guesses} guesses.`)
 }
