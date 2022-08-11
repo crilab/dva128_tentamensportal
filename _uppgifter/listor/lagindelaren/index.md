@@ -3,7 +3,7 @@ layout: assignment
 title: Lagindelaren
 color: green
 ---
-En idrottslärare försöker utveckla ett script som ska underlätta vid lagindelning inför idrottslektioner:
+En idrottslärare försöker skapa ett script för att hålla reda på vilka studenter som inte tilldelats något lag under idrottslektioner:
 
 {% highlight python linenos %}
 all_students = [
