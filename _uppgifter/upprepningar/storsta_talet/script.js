@@ -1,6 +1,6 @@
 async function main() {
-    print('STÖRSTA TALET')
-    print('-------------')
+    print('LARGEST INTEGER')
+    print('---------------')
 
     let i = -1
     let max = 0
@@ -11,10 +11,10 @@ async function main() {
             if (max < i)
                 max = i
         } catch(e) {
-            print('FEL: ogiltigt heltal')
+            print('ERROR: invalid integer')
         }
     }
 
-    print('-------------')
-    print(`RESULTAT: ${max}`)
+    print('---------------')
+    print(`RESULT: ${max}`)
 }
