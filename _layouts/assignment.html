@@ -1,12 +1,14 @@
 ---
 layout: default
 ---
-<div id="question">
-    <div id="subheader">{{ page.title }}</div>
+<div id="question" translate="yes">
+    <div id="subheader" translate="no">{{ page.title }}</div>
     {{ content }}
-    <pre id="terminal"></pre>
-    <div id="terminal_rerun">
-        <input id="terminal_rerun_input" type="button" value="&#9654;" disabled>
+    <div translate="no">
+        <pre id="terminal"></pre>
+        <div id="terminal_rerun">
+            <input id="terminal_rerun_input" type="button" value="&#9654;" disabled>
+        </div>
     </div>
 </div>
 <script src="script.js"></script>

@@ -10,6 +10,10 @@
     overflow: auto;
 }
 
+.highlight > pre {
+    white-space: normal;
+}
+
 .lineno {
     background-color: #F0F0F0;
     padding-right: 10px;

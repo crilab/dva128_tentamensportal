@@ -27,7 +27,7 @@ body {
     border-collapse: collapse;
 }
 
-#question > table * {
+#question > table th, #question > table td {
     border: 1px solid #888888;
     padding: 5px;
 }
