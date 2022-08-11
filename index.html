@@ -10,7 +10,7 @@ categories:
 ---
 {% for category in page.categories %}
 <div class="assignment-list">
-  <div class="assignment-list-header">{{ category | capitalize }}</div>
+  <div class="assignment-list-header" translate="yes">{{ category | capitalize }}</div>
   {% for uppgift in site.uppgifter %}
   {% capture path %}_uppgifter/{{ category }}{% endcapture %}
   {% if uppgift.path contains path %}

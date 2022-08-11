@@ -1,11 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Crimson+Pro&family=VT323&display=swap');
 
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
 body {
     font-family: 'Crimson Pro', serif;
     font-size: 18px;
     background-image: url("https://dva128.s3.eu-north-1.amazonaws.com/exam-questions/images/bg.jpg");
     background-size: cover;
     background-attachment: fixed;
+}
+
+.vspace {
+    width: 1px;
+    height: 10px;
 }
 
 #container {

@@ -10,7 +10,7 @@
     overflow: auto;
 }
 
-.highlight > pre {
+.highlight code.language-python {
     white-space: normal;
 }
 
