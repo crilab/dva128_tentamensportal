@@ -4,7 +4,7 @@ async function main() {
     let total = 0
 
     while (true) {
-        bird = await input('Fågelart: ')
+        bird = await input('Bird: ')
         bird = bird.toLowerCase()
 
         if (birds[bird] === undefined)
@@ -13,7 +13,7 @@ async function main() {
         birds[bird] += 1
         total += 1
 
-        print(`(${bird}) ${birds[bird]} av ${total}`)
+        print(`(${bird}) ${birds[bird]} out of ${total}`)
         print()
     }
 }
