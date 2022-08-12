@@ -3,7 +3,7 @@ layout: assignment
 title: Husdjursfilter
 color: red
 ---
-Variabeln pets innehåller husdjur som registrerats i ett populärt online-community:
+Variabeln med namn pets innehåller en lista av dictionaries där varje dictionary representerar ett husdjur:
 
 {% highlight python linenos %}
 # DIN KOD OVAN
@@ -23,8 +23,8 @@ for pet in cat_and_dogs:
     print(pet["name"], '(' + pet["type"] + ')')
 {% endhighlight %}
 
-Din uppgift är att slutföra scriptet genom att implementera funktionen pet_filter. Funktionen tar en lista med husdjur som argument och ska returnera en kopia av listan där samtliga husdjur som inte är av typen katt eller hund plockats bort.
+Din uppgift är att slutföra scriptet genom att implementera funktionen pet_filter. Funktionen tar listan med husdjur som argument och ska returnera en kopia av listan där samtliga husdjur som inte är av typen katt eller hund plockats bort.
 
-Listan med husdjur får inte modifieras av funktionen. Din lösning ska tolerera att husdjur tillkommer, modifieras och raderas i framtiden. Det är viktigt att husdjurens ordning bibehålls i den filtrerade listan.
+Den ursprungliga listan med husdjur får inte modifieras av funktionen. Din lösning ska tolerera att husdjur tillkommer, modifieras och raderas i framtiden. Det är viktigt att husdjurens ordning bibehålls i den filtrerade listan.
 
 När funktionen implementerats korrekt kommer scriptet köra med följande utskrift:
