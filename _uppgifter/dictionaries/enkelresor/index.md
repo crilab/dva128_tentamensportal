@@ -3,28 +3,28 @@ layout: assignment
 title: Enkelresor
 color: green
 ---
-Ett flygbolag har lagrat kommande veckas flygturer i variabeln enkelresor:
+Ett flygbolag har lagrat kommande veckas enkelresor i variabeln med namn flights:
 
 {% highlight python linenos %}
-enkelresor = [
-    { 'avgångsort': 'Stockholm', 'destination': 'Göteborg' },
-    { 'avgångsort': 'Göteborg', 'destination': 'Malmö' },
-    { 'avgångsort': 'Malmö', 'destination': 'Västerås' },
-    { 'avgångsort': 'Göteborg', 'destination': 'Stockholm' },
-    { 'avgångsort': 'Västerås', 'destination': 'Göteborg' },
-    { 'avgångsort': 'Stockholm', 'destination': 'Malmö' },
-    { 'avgångsort': 'Göteborg', 'destination': 'Västerås' }
+flights = [
+    { 'from': 'Stockholm', 'to': 'Göteborg' },
+    { 'from': 'Göteborg', 'to': 'Malmö' },
+    { 'from': 'Malmö', 'to': 'Västerås' },
+    { 'from': 'Göteborg', 'to': 'Stockholm' },
+    { 'from': 'Västerås', 'to': 'Göteborg' },
+    { 'from': 'Stockholm', 'to': 'Malmö' },
+    { 'from': 'Göteborg', 'to': 'Västerås' }
 ]
 
-enkelresor_dict = {}
+destinations = {}
 
 # DIN LÖSNING NEDAN
 {% endhighlight %}
 
-Flygbolaget behöver ett snabbt sätt att lista samtliga destinationer för en avgångsort och har därför definierat ett dictionary i variabeln enkelresor_dict. Din uppgift är att fylla den med data genom att tolka variabeln enkelresor.
+Flygbolaget behöver ett snabbt sätt att lista samtliga destinationer för en avgångsort och har därför definierat ett dictionary i en variabel med namn destinations. Din uppgift är att fylla den med data.
 
-Samtliga avgångsorter ska sättas som nycklar i variabelns dictionary. Som värde ska en lista sättas med samtliga destinationer för den avgångsorten.
+Samtliga avgångsorter (nyckeln *"from"* i flights) ska sättas som nycklar i variabeln. Som värde ska en lista sättas med samtliga ankomstorter (nyckeln *"to"* i flights) för den avgångsorten.
 
 Flygbolaget vill återanvända din kod i framtiden. Din lösning behöver därför tolerera att avgångar tillkommer, modifieras och raderas. Detta inkluderar avgångar till och från nya städer.
 
-Om din lösning är korrekt kommer enkelresor_dict innehålla följande:
+Om din lösning är korrekt kommer variabeln med namn destinations innehålla följande:

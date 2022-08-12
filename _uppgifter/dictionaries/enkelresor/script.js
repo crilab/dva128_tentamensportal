@@ -1,26 +1,26 @@
 async function main() {
-    const enkelresor = [
-        { 'avgångsort': 'Stockholm', 'destination': 'Göteborg' },
-        { 'avgångsort': 'Göteborg', 'destination': 'Malmö' },
-        { 'avgångsort': 'Malmö', 'destination': 'Västerås' },
-        { 'avgångsort': 'Göteborg', 'destination': 'Stockholm' },
-        { 'avgångsort': 'Västerås', 'destination': 'Göteborg' },
-        { 'avgångsort': 'Stockholm', 'destination': 'Malmö' },
-        { 'avgångsort': 'Göteborg', 'destination': 'Västerås' }
+    const flights = [
+        { 'from': 'Stockholm', 'to': 'Göteborg' },
+        { 'from': 'Göteborg', 'to': 'Malmö' },
+        { 'from': 'Malmö', 'to': 'Västerås' },
+        { 'from': 'Göteborg', 'to': 'Stockholm' },
+        { 'from': 'Västerås', 'to': 'Göteborg' },
+        { 'from': 'Stockholm', 'to': 'Malmö' },
+        { 'from': 'Göteborg', 'to': 'Västerås' }
     ]
     
-    let enkelresor_dict = {}
+    let destinations = {}
 
-    for (const route of enkelresor) {
-        if (enkelresor_dict[route['avgångsort']] === undefined)
-            enkelresor_dict[route['avgångsort']] = []
-        enkelresor_dict[route['avgångsort']].push(route['destination'])
+    for (const flight of flights) {
+        if (destinations[flight['from']] === undefined)
+            destinations[flight['from']] = []
+        destinations[flight['from']].push(flight['to'])
     }
 
     // not pretty but works
     print('{')
-    for (const key in enkelresor_dict) {
-        const value = JSON.stringify(enkelresor_dict[key]).replaceAll(',', ', ')
+    for (const key in destinations) {
+        const value = JSON.stringify(destinations[key]).replaceAll(',', ', ')
         print(`    "${key}": ${value}`, '')
         print(key != 'Västerås' ? ',' : '')
     }
