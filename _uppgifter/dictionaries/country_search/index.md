@@ -3,7 +3,7 @@ layout: assignment
 title: Country Search
 color: green
 ---
-Variabeln countries innehåller ett dictionary med ett antal europeiska länder. Till varje land finns en lista med ett antal städer i det landet:
+Variabeln med namn countries innehåller ett dictionary med ett antal europeiska länder. Till varje land finns en lista med städer i det landet:
 
 {% highlight python linenos %}
 countries = {
@@ -19,7 +19,7 @@ city = input('city > ')
 # DIN LÖSNING NEDAN
 {% endhighlight %}
 
-Din uppgift är att slutföra programmet så att landet skrivs ut som har staden användaren matar in på rad 9:
+Din uppgift är att slutföra programmet så att landet skrivs ut för staden som matas in på rad 9:
 
 {% highlight text %}
 city > Bergen
@@ -40,6 +40,6 @@ city > ingenstad
 ERROR: not found (ingenstad)
 {% endhighlight %}
 
-Du får inte göra förändringar i den givna koden. Din lösning ska tolerera att länder och städer tillkommer (eller tas bort) i framtiden.
+Din lösning ska tolerera att länder och städer tillkommer (eller tas bort) i framtiden.
 
-Testa gärna lösningsförslaget nedan:
+Ett lösningsförslag visas nedan:
