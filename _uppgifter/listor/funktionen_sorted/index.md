@@ -3,9 +3,9 @@ layout: assignment
 title: Funktionen sorted
 color: red
 ---
-Variabeln people innehåller en lista av dictionaries enligt följande:
+Variabeln med namn people innehåller en lista av dictionaries enligt följande:
 
-{% highlight python %}
+{% highlight python linenos %}
 people = [
     {
         'name': 'Anna',
@@ -20,6 +20,8 @@ people = [
         'age': 30
     }
 ]
+
+# DIN LÖSNING NEDAN
 {% endhighlight %}
 
-Skapa en program som sorterar listan utifrån ålder i bakvänd ordning (högst till lägst) med den inbyggda funktionen sorted. Programmet ska därefter skriva ut den sorterade listan enligt exemplet nedan:
+Slutför programmet genom att sortera listan utifrån ålder (nyckeln *'age'*) i bakvänd ordning (högst till lägst) med den inbyggda funktionen sorted. Programmet ska därefter skriva ut den sorterade listan enligt exemplet nedan:
