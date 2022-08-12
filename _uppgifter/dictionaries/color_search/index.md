@@ -3,7 +3,7 @@ layout: assignment
 title: Color Search
 color: green
 ---
-Variabeln countries innehåller ett dictionary med ett antal europeiska länder. Av variabeln framgår vilka färger som ingår i respektive lands flagga:
+Variabeln med namn countries innehåller ett dictionary med ett antal europeiska länder. Av variabeln kan man utläsa vilka färger som ingår i respektive lands flagga:
 
 {% highlight python linenos %}
 countries = {
@@ -38,6 +38,6 @@ Netherlands
 Norway
 {% endhighlight %}
 
-Sökningen ska göras genom iteration av variabeln countries. Du får inte göra förändringar i den givna koden.
+Din lösning ska tolerera att länder och färger tillkommer, ändras eller tas bort i framtiden.
 
-Testa gärna lösningsförslaget nedan:
+Ett lösningsförslag visas nedan:
