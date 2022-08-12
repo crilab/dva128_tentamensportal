@@ -3,7 +3,7 @@ layout: assignment
 title: Lösenordshanteraren
 color: red
 ---
-I filen **passwords.json** lagrar en användare sina inloggningsuppgifter för olika hemsidor:
+I en fil med namn **passwords.json** lagrar en användare sina inloggningsuppgifter för olika hemsidor:
 
 {% highlight json %}
 {
@@ -21,16 +21,16 @@ I filen **passwords.json** lagrar en användare sina inloggningsuppgifter för o
 }
 {% endhighlight %}
 
-Din uppgift är att implementera en lösenordshanterare som gör uppslag i filen.
+Din uppgift är att implementera en lösenordshanterare som hämtar kontoinformation från filen.
 
-Inloggningsuppgifterna skyddas av ett gemensamt lösenord (nyckeln *master_password*). Användaren måste mata in detta lösenord för att tillåtas göra uppslag:
+För att tillåtas hämta kontoinformation behöver användaren först ange filens lösenord. Filens lösenord lagras under nyckeln *"master_password"*:
 
 {% highlight test %}
 Master password: s3cr3t
 SUCCESS: authorized
 {% endhighlight %}
 
-När användaren angett korrekt lösenord görs uppslag genom att användaren matar in domännamnet för hemsidan:
+När användaren autentierats görs uppslag genom att mata in domännamnet för hemsidan vars kontoinformation man vill hämta:
 
 {% highlight test %}
 Domain: socialnetwork.example.com
@@ -40,4 +40,6 @@ password: abc123
 -----
 {% endhighlight %}
 
-Användarnamn och lösenord ska skrivas ut på olika rader (likt exemplet ovan). Programmet ska tolerera att det gemensamma lösenordet (nyckeln *master_password*) byts ut samt att inloggningsuppgifter tillkommer, ändras och tas bort.
+Användarnamn och lösenord ska skrivas ut på olika rader (likt exemplet ovan).
+
+Programmet ska tolerera att filens lösenord byts ut samt att inloggningsuppgifter tillkommer, ändras eller tas bort.
