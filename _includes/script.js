@@ -36,6 +36,7 @@ function input(prompt='') {
 
         const input = document.createElement('input')
         input.type = 'text'
+        input.spellcheck = false
 
         input.onkeydown = e => {
             if (e.key == 'Enter') {
