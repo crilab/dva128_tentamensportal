@@ -10,12 +10,12 @@ Johan,Persson,Stockholm
 Sara,Svensson,Malmö
 Erik,Gustafsson,Malmö`
 
-    const city = await input('Bostadsort: ')
+    const location = await input('Location: ')
     print('-----')
 
     for (const row of csv.split('\n')) {
-        const row_city = row.split(',')[2]
-        if (city == row_city)
+        const row_location = row.split(',')[2]
+        if (location == row_location)
             print(row)
     }
 }
