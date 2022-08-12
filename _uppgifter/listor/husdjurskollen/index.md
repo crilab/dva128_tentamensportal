@@ -25,14 +25,14 @@ pet_owner_name = input('pet owner name > ')
 # DIN KOD NEDAN
 {% endhighlight %}
 
-Variabeln pet_owners innehåller en lista av dictionaries där varje dictionary representerar en husdjursägare. Detta dictionary har två nycklar:
+Variabeln med namn pet_owners innehåller en lista av dictionaries där varje dictionary representerar en husdjursägare. Detta dictionary har två nycklar:
 
 | Nyckel | Beskrivning           |
 | ------ | --------------------- |
 | name   | Husdjursägarens namn  |
 | id     | En unik identifierare |
 
-Variabeln pets innehåller en lista av dictionaries där varje dictionary representerar ett husdjur. Även detta dictionary har två nycklar:
+Variabeln med namn pets innehåller en lista av dictionaries där varje dictionary representerar ett husdjur. Även detta dictionary har två nycklar:
 
 | Nyckel   | Beskrivning        |
 | -------- | ------------------ |
@@ -41,8 +41,8 @@ Variabeln pets innehåller en lista av dictionaries där varje dictionary repres
 
 Genom att jämföra variablerna kan vi dra slutsatsen att Lars är husdjursägare till Doris och Luna eftersom husdjursens owner_id matchar med id för Lars.
 
-Din uppgift är att slutföra scriptet ovan så att namnet på samtliga husdjur skrivs ut för husdjursägaren som användaren matar in vid rad 15.
+Din uppgift är att slutföra scriptet ovan så att namnet på samtliga husdjur skrivs ut för husdjursägaren som användaren matar in vid rad 15. Tänk på att användare matar in namn (inte id) på husdjursägaren.
 
-Du får inte göra förändingar i den givna koden. Tänk på att användare matar in namn (inte id) på husdjursägaren. Din lösning ska tolerera att husdjur och husdjursägareägare tillkommer eller plockas bort i framtiden.
+Din lösning ska tolerera att husdjur och husdjursägareägare tillkommer eller plockas bort i framtiden.
 
 Testa mata in namnet på en husdjursägare (exempelvis Anna) i lösningsförslaget nedan:
