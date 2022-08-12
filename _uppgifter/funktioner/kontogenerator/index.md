@@ -3,7 +3,7 @@ layout: assignment
 title: Kontogenerator
 color: green
 ---
-En IT-administratör har påbörjat följande script för att generera användarnamn åt personerna i variabeln users:
+En IT-administratör utvecklar ett script för att generera användarnamn åt personerna i variabeln nedan (users):
 
 {% highlight python linenos %}
 # DIN KOD OVAN
