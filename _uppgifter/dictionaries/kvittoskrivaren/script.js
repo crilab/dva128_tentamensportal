@@ -1,24 +1,24 @@
 async function main() {
-    const kundvagn = [
+    const cart = [
         {
-            'namn': 'T-shirt',
-            'antal': 2,
-            'kostnad': 149
+            'name': 'T-shirt',
+            'quantity': 2,
+            'cost': 149
         },
         {
-            'namn': 'Shorts',
-            'antal': 1,
-            'kostnad': 199
+            'name': 'Shorts',
+            'quantity': 1,
+            'cost': 199
         },
         {
-            'namn': 'Strumpor',
-            'antal': 3,
-            'kostnad': 49
+            'name': 'Strumpor',
+            'quantity': 3,
+            'cost': 49
         },
         {
-            'namn': 'Baddräkt',
-            'antal': 1,
-            'kostnad': 249
+            'name': 'Baddräkt',
+            'quantity': 1,
+            'cost': 249
         }
     ]
 
@@ -29,9 +29,9 @@ async function main() {
 
     let total = 39
 
-    for (const artikel of kundvagn) {
-        print(`${artikel.antal} st ${artikel.namn} (${artikel.kostnad} kr/st)`)
-        total += artikel.antal * artikel.kostnad
+    for (const item of cart) {
+        print(`${item.quantity} st ${item.name} (${item.cost} kr/st)`)
+        total += item.quantity * item.cost
     }
 
     line()

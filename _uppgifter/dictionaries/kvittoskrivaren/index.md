@@ -3,38 +3,46 @@ layout: assignment
 title: Kvittoskrivaren
 color: green
 ---
-Variabeln kundvagn innehåller artiklar som en användare köpt från en webbshop:
+Variabeln med namn cart innehåller artiklar som en användare köpt från en webbshop:
 
 {% highlight python linenos %}
-kundvagn = [
+cart = [
     {
-        'namn': 'T-shirt',
-        'antal': 2,
-        'kostnad': 149
+        'name': 'T-shirt',
+        'quantity': 2,
+        'cost': 149
     },
     {
-        'namn': 'Shorts',
-        'antal': 1,
-        'kostnad': 199
+        'name': 'Shorts',
+        'quantity': 1,
+        'cost': 199
     },
     {
-        'namn': 'Strumpor',
-        'antal': 3,
-        'kostnad': 49
+        'name': 'Strumpor',
+        'quantity': 3,
+        'cost': 49
     },
     {
-        'namn': 'Baddräkt',
-        'antal': 1,
-        'kostnad': 249
+        'name': 'Baddräkt',
+        'quantity': 1,
+        'cost': 249
     }
 ]
 
 # DIN LÖSNING NEDAN
 {% endhighlight %}
 
+Artiklar representeras av ett dictionary med tre nycklar:
+
+| Nyckel   | Beskrivning                                |
+| -------- | ------------------------------------------ |
+| name     | Artikelns namn                             |
+| quantity | Antal artiklar av denna typ som inhandlats |
+| cost     | Artikelns kostnad (per styck)              |
+
 Din uppgift är att visa hur man kan skriva ut ett kvitto (likt exemplet nedan) genom att tolka variabeln.
 
-Samtliga artiklar ska ingå i kvittot med tillhörande attribut (namn, antal och kostnad). Tänk på att det är styckpriser som framgår av variabeln.
+Samtliga artiklar ska ingå i kvittot med tillhörande attribut (namn, kvantitet och kostnad).
 
 Ditt program behöver beräkna och skriva ut den totala kostnaden för ordern. Till ordern tillkommer en fraktavgift på 39 kronor som behöver räknas med i den totala kostnaden.
 
