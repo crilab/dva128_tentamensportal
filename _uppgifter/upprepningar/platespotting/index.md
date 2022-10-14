@@ -1,7 +1,7 @@
 ---
 layout: assignment
 title: Platespotting
-color: green
+color: red
 ---
 Platespotting är en lek där man börjar med att leta efter en bil vars registreringsnummer slutar med 001. Därefter letar man en bil vars registreringsnummer slutar på 002. Efter det letar man efter 003 och så fortsätter man tills man räknat till 999:
 
