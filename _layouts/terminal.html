@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="sv">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Tentamensportal - Terminal</title>
+        <style>
+{% include style.css %}
+        </style>
+    </head>
+    <body style="background-image: none; height: 100%; padding: 0;">
+        <div translate="no" style="height: 100%; display: flex; flex-direction: column;">
+            <div id="terminal_rerun" style="flex-grow: 0; background-image: linear-gradient(#EEEEEE, #AAAAAA); border-bottom: 1px solid black;">
+                <input id="terminal_rerun_input" type="button" style="border-radius: 0; margin: 5px; font-size: 10px;" value="&#9654;" disabled>
+            </div>
+            <pre id="terminal" style="margin: 0; height: auto; flex-grow: 1; border: none;"></pre>
+        </div>
+        <script src="script.js"></script>
+        <script>
+{% include script.js %}
+        </script>
+    </body>
+</html>

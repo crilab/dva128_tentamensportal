@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Crimson+Pro&family=VT323&display=swap');
 
 html, body {
+    height: 100%;
     margin: 0;
     padding: 0;
 }
@@ -11,6 +12,7 @@ body {
     background-image: url("https://dva128.s3.eu-north-1.amazonaws.com/exam-questions/images/bg.jpg");
     background-size: cover;
     background-attachment: fixed;
+    padding: 0 10px;
 }
 
 .vspace {
