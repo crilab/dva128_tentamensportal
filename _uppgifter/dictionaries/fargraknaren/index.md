@@ -1,7 +1,7 @@
 ---
 layout: assignment
 title: Färgräknaren
-color: red
+color: green
 ---
 En tulltjänsteman har sammanställt en lista över färger på förbipasserande bilar den senaste timmen:
 
