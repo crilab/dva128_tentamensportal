@@ -1,7 +1,7 @@
 ---
 layout: assignment
 title: Husdjursfilter
-color: red
+color: green
 ---
 Variabeln med namn pets innehåller en lista av dictionaries där varje dictionary representerar ett husdjur:
 
