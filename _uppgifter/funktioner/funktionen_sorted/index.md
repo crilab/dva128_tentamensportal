@@ -1,7 +1,7 @@
 ---
 layout: assignment
 title: Funktionen sorted
-color: red
+color: green
 ---
 Variabeln med namn people innehåller en lista av dictionaries enligt följande:
 
