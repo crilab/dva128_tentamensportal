@@ -112,8 +112,7 @@ body {
 
 .assignment-list-item {
     border-top: 1px solid #888888;
-
-    display: flex;
+    display: none;
 }
 
 .assignment-list-item:hover {

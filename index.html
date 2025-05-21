@@ -22,3 +22,14 @@ categories:
   {% endfor %}
 </div>
 {% endfor %}
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    let targetFile = "index.html";
+    if (window.location.search.includes("language=english")) {
+      targetFile = "english.html";
+    }
+    document.querySelectorAll(`.assignment-list-item a[href$='${targetFile}']`).forEach(function (link) {
+      link.parentElement.style.display = "flex";
+    });
+  });
+</script>
