@@ -12,10 +12,28 @@
     <body translate="no">
         <div class="vspace"></div>
         <div id="container">
-            <a href="/dva128_tentamensportal/index.html" id="header">
-                <div>TENTAMENSPORTAL</div>
-                <div>PROGRAMMERINGSTEKNIK MED PYTHON</div>
-            </a>
+            <a href="../../../../index.html" id="header"></a>
+            <script>
+                document.addEventListener("DOMContentLoaded", function () {
+                    const header = document.getElementById("header");
+                    let headerTexts = [
+                        "TENTAMENSPORTAL",
+                        "PROGRAMMERINGSTEKNIK MED PYTHON"
+                    ]
+                    if (window.location.href.includes("english")) {
+                        header.href += "?language=english"
+                        headerTexts = [
+                            "FINAL EXAM PORTAL",
+                            "COMPUTER PROGRAMMING WITH PYTHON"
+                        ]
+                    }
+                    for (let text of headerTexts) {
+                        const div = document.createElement("div");
+                        div.innerText = text;
+                        header.appendChild(div);
+                    }
+                })
+            </script>
             <div id="content">
                 {{ content }}
             </div>
