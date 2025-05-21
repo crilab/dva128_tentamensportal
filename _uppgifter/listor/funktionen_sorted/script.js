@@ -14,7 +14,7 @@ async function main() {
         }
     ]
 
-    people.sort((a, b) => {return a.age < b.age})
+    people.sort((a, b) => {return b.age - a.age})
 
     people.forEach(person => {
         print(`${person.age} - ${person.name}`)
