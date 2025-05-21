@@ -27,6 +27,19 @@ categories:
     let targetFile = "index.html";
     if (window.location.search.includes("language=english")) {
       targetFile = "english.html";
+      const translations = {
+        'Upprepningar': 'Repetitions',
+        'Listor': 'Lists',
+        'Filhantering': 'File Handling',
+        'Dictionaries': 'Dictionaries',
+        'Funktioner': 'Functions'
+      };
+      document.querySelectorAll('.assignment-list-header').forEach(function (header) {
+        const original = header.innerText.trim();
+        if (translations[original]) {
+          header.innerText = translations[original];
+        }
+      });
     }
     document.querySelectorAll(`.assignment-list-item a[href$='${targetFile}']`).forEach(function (link) {
       link.parentElement.style.display = "flex";
