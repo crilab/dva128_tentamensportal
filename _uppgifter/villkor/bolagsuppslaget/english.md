@@ -3,7 +3,7 @@ layout: assignment
 title: Company Lookup
 color: green
 ---
-The following table presents the largest Swedish and American companies in the construction and food sectors:
+This table provides examples of Swedish and U.S. companies in the construction and food sectors:
 
 <table>
     <tr style="background-color: #EEEEEE">

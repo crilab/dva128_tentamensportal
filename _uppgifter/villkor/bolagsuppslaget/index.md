@@ -3,7 +3,7 @@ layout: assignment
 title: Bolagsuppslaget
 color: green
 ---
-Följande tabell presenterar de största svenska och amerikanska bolagen inom sektorerna bygg och livsmedel:
+Följande tabell ger exempel på svenska och amerikanska bolag inom sektorerna bygg och livsmedel:
 
 <table>
     <tr style="background-color: #EEEEEE">
