@@ -9,4 +9,6 @@ Each time the user guesses incorrectly, the program should indicate whether the 
 
 If the user guesses correctly, the program should print the number of guesses and then terminate.
 
+In case of invalid input, display an error message and let the user try again.
+
 A sample solution is shown below:

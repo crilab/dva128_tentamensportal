@@ -7,7 +7,13 @@ async function main() {
     let guesses = 0
 
     while (guess != correct) {
-        guess = int(await input('> '))
+        try {
+            guess = int(await input('> '))
+        } catch (e) {
+            print('ERROR: invalid guess')
+            continue
+        }
+
         guesses += 1
 
         if (guess < correct)

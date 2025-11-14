@@ -9,4 +9,6 @@ Varje gång användaren gissar fel ska programmet svara om det faktiska talet ä
 
 Gissar användaren rätt ska programmet skriva ut antalet gissningar och därefter stänga.
 
+Vid ogiltig inmatning, visa ett felmeddelande och låt användaren försöka igen.
+
 Ett lösningsförslag visas nedan:
