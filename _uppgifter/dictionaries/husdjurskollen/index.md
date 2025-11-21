@@ -43,6 +43,11 @@ Genom att jämföra variablerna kan vi dra slutsatsen att Lars är husdjursägar
 
 Din uppgift är att slutföra scriptet ovan så att namnet på samtliga husdjur skrivs ut för husdjursägaren som användaren matar in vid rad 15. Tänk på att användare matar in namn (inte id) på husdjursägaren.
 
+Lös uppgiften genom att implementera söklogiken i följande två funktioner:
+
+- get_owner_id(owner_name: str) -> str
+- get_pets(owner_id: str) -> list
+
 Din lösning ska tolerera att husdjur och husdjursägareägare tillkommer eller plockas bort i framtiden.
 
 Testa mata in namnet på en husdjursägare (exempelvis Anna) i lösningsförslaget nedan:

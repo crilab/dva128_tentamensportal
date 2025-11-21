@@ -43,6 +43,11 @@ By comparing the variables, we can conclude that Lars is the owner of Doris and 
 
 Your task is to complete the script above so that the names of all pets are printed for the pet owner whose name the user enters at line 15. Keep in mind that the user inputs the pet owner's name (not their ID).
 
+Solve the task by implementing the search logic in the following two functions:
+
+- get_owner_id(owner_name: str) -> str
+- get_pets(owner_id: str) -> list
+
 Your solution should be robust to pets and pet owners being added or removed in the future.
 
 Try entering the name of a pet owner (for example, Anna) into the solution template below:
