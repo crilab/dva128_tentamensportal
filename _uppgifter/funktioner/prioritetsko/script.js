@@ -20,7 +20,7 @@ async function main() {
         const operation = await input('> ')
 
         if (operation == 'push') {
-            const priority = await input('priority: ')
+            const priority = int(await input('priority: '))
             const task = await input('task: ')
             priority_queue.push({priority, task})
             priority_queue.sort((a, b) => { return b.priority - a.priority })
