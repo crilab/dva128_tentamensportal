@@ -1,18 +1,9 @@
 async function main() {
-    print('HOT DOG PLANNER')
-    print('---------------')
-
-    print('How many students want 2 regular hot dogs?')
-    const regular_2 = int(await input('> '))
-
-    print('How many students want 3 regular hot dogs?')
-    const regular_3 = int(await input('> '))
-
-    print('How many students want 2 vegan hot dogs?')
-    const vegan_2 = int(await input('> '))
-
-    print('How many students want 3 vegan hot dogs?')
-    const vegan_3 = int(await input('> '))
+    print('--- HOT DOG PLANNER ---')
+    const regular_2 = int(await input('How many students chose 2 sausages? '))
+    const regular_3 = int(await input('How many students chose 3 sausages? '))
+    const vegan_2 = int(await input('How many students chose 2 vegan sausages? '))
+    const vegan_3 = int(await input('How many students chose 3 vegan sausages? '))
     
     const regular_tot = 2 * regular_2 + 3 * regular_3
     const vegan_tot = 2 * vegan_2 + 3 * vegan_3
@@ -27,19 +18,9 @@ async function main() {
     const drink_price = 13.95 * drink_amount
 
     print()
-    print('---------------')
-    print('    RECEIPT    ')
-    print('---------------')
-    print('REGULAR:')
-    print('  Packages: ' + regular_packages)
-    print('  Price:    ' + regular_price.toFixed(2) + ':-')
-    print('VEGAN:')
-    print('  Packages: ' + vegan_packages)
-    print('  Price:    ' + vegan_price.toFixed(2) + ':-')
-    print('DRINK:')
-    print('  Amount:   ' + drink_amount)
-    print('  Price:    ' + drink_price.toFixed(2) + ':-')
-    print('TOTAL:')
-    print('  Price:    ' + (regular_price + vegan_price + drink_price).toFixed(2) + ':-')
-    print('---------------')
+    print('--- SHOPPING LIST ---')
+    print('Regular sausage: ' + regular_packages + ' packages')
+    print('Vegan sausage: ' + vegan_packages + ' packages')
+    print('Drinks: ' + drink_amount + ' bottles')
+    print('Total cost: ' + (regular_price + vegan_price + drink_price).toFixed(2) + ' SEK')
 }
