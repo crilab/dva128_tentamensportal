@@ -6,6 +6,6 @@ async function main() {
         const a = list_a[i]
         const b = list_b[i]
         const end = a == b ? '\n' : ' <- DIFF!\n'
-        print(`${a} <-> ${b}`, end)
+        print(`(${i}) ${a}-${b}`, end)
     }
 }

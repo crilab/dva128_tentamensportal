@@ -15,3 +15,5 @@ list_b = [4, 1, 1, 4, 7, 9, 6, 8, 5, 8]
 Programmet ska skriva ut samtliga heltal från båda listor sida vid sida i vertikal riktning. Positioner där listorna skiljer sig ska markeras med en pil (likt exemplet nedan).
 
 Din lösning ska tolerera att listorna ändras i framtiden, men du kan alltid utgå från att **list_a** har samma längd som **list_b**.
+
+Lös uppgiften med en while-loop och inkludera elementens index på varje utskriven rad.
