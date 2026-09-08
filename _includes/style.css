@@ -9,7 +9,7 @@ html, body {
 body {
     font-family: 'Crimson Pro', serif;
     font-size: 18px;
-    background-image: url("https://dva128.s3.eu-north-1.amazonaws.com/exam-questions/images/bg.jpg");
+    background-image: url("./images/bg.jpg");
     background-size: cover;
     background-attachment: fixed;
     padding: 0 10px;
@@ -57,7 +57,7 @@ body {
     text-decoration: none;
 
     background-color: black;
-    background-image: url("https://dva128.s3.eu-north-1.amazonaws.com/exam-questions/images/header.jpg");
+    background-image: url("./images/header.jpg");
     background-size: cover;
     background-position: center;
 
